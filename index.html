@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+
+
+    <style>       
+    *{
+        font-family: Arial, sans-serif;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        
+    }
+
+    th, td {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 12px; 
+    }
+    .color-box {
+        width: 60px;
+        height: 10px;
+        display: inline-block;
+        margin-right: 10px; 
+    }
+
+    .indicators {
+            text-align: right;
+            margin-bottom: 10px;
+        }
+
+    .red {
+         background-color: red; 
+        }
+    .orange { 
+        background-color: orange; 
+    }
+    .yellow { 
+        background-color: yellow;
+     }
+    .green {
+         background-color: green; 
+        }
+    
+    tr:hover {
+       background-color: #f5f5f5;
+    }
+    @media (max-width: 768px) {
+            .color-box {
+                width: 60px;
+                height: 10px;
+            }
+            .indicators{
+               text-align: center;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="indicators">
+        <span class="color-box red"></span>High
+        <span class="color-box orange"></span>Moderate
+        <span class="color-box yellow"></span>Mild
+        <span class="color-box green"></span>Completed
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Case Name</th>
+                <th>Case Type</th>
+                <th>Case Heat</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td data-label="Date">2023-09-20</td>
+                <td data-label="Case Name">Sample Case 1</td>
+                <td data-label="Case Type">Civil</td>
+                <td data-label="Case Heat">
+                    <span class="color-box green"></span>
+                </td>
+            </tr>
+            <tr>
+                <td data-label="Date">2023-09-21</td>
+                <td data-label="Case Name">Sample Case 2</td>
+                <td data-label="Case Type">Criminal</td>
+                <td data-label="Case Heat">
+                    <span class="color-box red"></span>
+                </td>
+            </tr>
+            <tr>
+                <td data-label="Date">2023-09-22</td>
+                <td data-label="Case Name">Sample Case 3</td>
+                <td data-label="Case Type">Family</td>
+                <td data-label="Case Heat">
+                    <span class="color-box yellow"></span>
+                </td>
+            </tr>
+            <tr>
+                <td data-label="Date">2023-09-23</td>
+                <td data-label="Case Name">Sample Case 4</td>
+                <td data-label="Case Type">Intellectual Property</td>
+                <td data-label="Case Heat">
+                    <span class="color-box green"></span>
+                </td>
+            </tr>
+            <tr>
+                <td data-label="Date">2023-09-24</td>
+                <td data-label="Case Name">Sample Case 5</td>
+                <td data-label="Case Type">Immigration</td>
+                <td data-label="Case Heat">
+                    <span class="color-box orange"></span>
+                </td>
+            </tr>
+            <tr>
+                <td data-label="Date">2023-09-25</td>
+                <td data-label="Case Name">Sample Case 6</td>
+                <td data-label="Case Type">Environmental</td>
+                <td data-label="Case Heat">
+                    <span class="color-box red"></span>
+                </td>
+            </tr>
+            <tr>
+                <td data-label="Date">2023-09-26</td>
+                <td data-label="Case Name">Sample Case 7</td>
+                <td data-label="Case Type">Labor</td>
+                <td data-label="Case Heat">
+                    <span class="color-box yellow"></span>
+                </td>
+            </tr>
+            <tr>
+                <td data-label="Date">2023-09-27</td>
+                <td data-label="Case Name">Sample Case 8</td>
+                <td data-label="Case Type">Personal Injury</td>
+                <td data-label="Case Heat">
+                    <span class="color-box orange"></span>
+                </td>
+            </tr>
+            <tr>
+                <td data-label="Date">2023-09-24</td>
+                <td data-label="Case Name">Sample Case 5</td>
+                <td data-label="Case Type">Immigration</td>
+                <td data-label="Case Heat">
+                    <span class="color-box orange"></span>
+                </td>
+            </tr>
+            <tr>
+                <td data-label="Date">2023-09-25</td>
+                <td data-label="Case Name">Sample Case 6</td>
+                <td data-label="Case Type">Environmental</td>
+                <td data-label="Case Heat">
+                    <span class="color-box red"></span>
+                </td>
+            </tr>
+            <tr>
+                <td data-label="Date">2023-09-26</td>
+                <td data-label="Case Name">Sample Case 7</td>
+                <td data-label="Case Type">Labor</td>
+                <td data-label="Case Heat">
+                    <span class="color-box yellow"></span>
+                </td>
+            </tr>
+            <tr>
+                <td data-label="Date">2023-09-27</td>
+                <td data-label="Case Name">Sample Case 8</td>
+                <td data-label="Case Type">Personal Injury</td>
+                <td data-label="Case Heat">
+                    <span class="color-box orange"></span>
+                </td>
+            </tr>
+            <tr>
+                <td data-label="Date">2023-09-20</td>
+                <td data-label="Case Name">Sample Case 1</td>
+                <td data-label="Case Type">Civil</td>
+                <td data-label="Case Heat">
+                    <span class="color-box green"></span>
+                </td>
+            </tr>
+            <tr>
+                <td data-label="Date">2023-09-21</td>
+                <td data-label="Case Name">Sample Case 2</td>
+                <td data-label="Case Type">Criminal</td>
+                <td data-label="Case Heat">
+                    <span class="color-box red"></span>
+                </td>
+            </tr>
+            <tr>
+                <td data-label="Date">2023-09-22</td>
+                <td data-label="Case Name">Sample Case 3</td>
+                <td data-label="Case Type">Family</td>
+                <td data-label="Case Heat">
+                    <span class="color-box yellow"></span>
+                </td>
+            </tr>
+            <tr>
+                <td data-label="Date">2023-09-23</td>
+                <td data-label="Case Name">Sample Case 4</td>
+                <td data-label="Case Type">Intellectual Property</td>
+                <td data-label="Case Heat">
+                    <span class="color-box green"></span>
+                </td>
+            </tr>
+            
+            <td data-label="Date">2023-09-26</td>
+            <td data-label="Case Name">Sample Case 7</td>
+            <td data-label="Case Type">Labor</td>
+            <td data-label="Case Heat">
+                <span class="color-box yellow"></span>
+            </td>
+        </tr>
+        <tr>
+            <td data-label="Date">2023-09-27</td>
+            <td data-label="Case Name">Sample Case 8</td>
+            <td data-label="Case Type">Personal Injury</td>
+            <td data-label="Case Heat">
+                <span class="color-box orange"></span>
+            </td>
+        </tr>
+        <tr>
+            <td data-label="Date">2023-09-20</td>
+            <td data-label="Case Name">Sample Case 1</td>
+            <td data-label="Case Type">Civil</td>
+            <td data-label="Case Heat">
+                <span class="color-box green"></span>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</body>
+</html>
